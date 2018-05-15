@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="ID = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView1"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:text="SUBJECT = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView2"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="PROFESSOR = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView3"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="ROOM = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView4"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="DAY OF THE WEEK = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView5"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="ROOM TYPE = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView6"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="START TIME = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView7"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="END TIME = "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/textView8"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Id Show Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewID"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:text="Subject Name Show Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSubject"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_above="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="Professor Name Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewProfessor"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="Room Number Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewRoom"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="Day Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDay"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:text="Type Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewType"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="Start time Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStart"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:text="End time Here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEnd"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <Button
+        android:text="Edit timetable record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/buttonEdit"
+        android:layout_above="@+id/buttonDelete"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:text="Delete timetable record"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@android:color/white"
+        android:id="@+id/buttonDelete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp" />
+
+
+</RelativeLayout>

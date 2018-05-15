@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_change_email"
+            android:title="Change email" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+        <item
+            android:id="@+id/nav_delete_account"
+            android:title="Delete account" />
+
+
+    </group>
+
+</menu>

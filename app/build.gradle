@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.dummy.campusnavforblind"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 21
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.google.firebase:firebase-messaging:12.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'com.android.support:design:26.1.0'
+
+    //api for projects imported from git and firebase
+    implementation "com.google.firebase:firebase-core:12.0.0"
+
+    implementation "com.google.firebase:firebase-auth:12.0.0"
+    implementation "com.google.android.gms:play-services-auth:12.0.0"
+
+    implementation 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    implementation 'com.github.bumptech.glide:glide:4.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.2.0'
+    implementation 'com.android.volley:volley:1.1.0-rc1'
+    implementation 'com.google.android.gms:play-services:12.0.0'
+
+    implementation 'com.getbase:floatingactionbutton:1.9.0'
+    implementation 'com.wdullaer:materialdatetimepicker:1.2.1'
+    implementation 'com.bignerdranch.android:recyclerview-multiselect:+'
+    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+    implementation 'com.android.support:recyclerview-v7:26.+'
+    implementation 'com.getbase:floatingactionbutton:1.9.0'
+    implementation 'com.wdullaer:materialdatetimepicker:1.2.1'
+    implementation 'com.bignerdranch.android:recyclerview-multiselect:+'
+    implementation 'com.wrapp.floatlabelededittext:library:0.0.6'
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    implementation 'com.android.support:design:26+'
+
+    implementation 'com.estimote:proximity-sdk:0.4.1'
+    implementation 'com.estimote:mustard:0.2.1'
+}
+apply plugin: 'com.google.gms.google-services'

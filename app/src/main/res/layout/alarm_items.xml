@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/letter_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toRightOf="@id/letter_image"
+        android:layout_toLeftOf="@+id/remind_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/remind_title"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            tools:text="Title"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/remind_date_time"
+            android:layout_width="match_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            tools:text="Date and Time"/>
+
+
+    </LinearLayout>
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_notifications_off_grey600_24dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/remind_image"/>
+
+
+</RelativeLayout>

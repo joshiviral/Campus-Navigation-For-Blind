@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dummy.campusnavforblind">
+
+    <!--  permission which are required for application  -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/walksafe"
+        android:label="ConestogaWalkSafe"
+        android:roundIcon="@drawable/walksafe"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- service to get token for mobile device  -->
+        <service android:name=".MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--  service to get remote message from firebase-->
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:label="Settings Page"></activity>
+        <activity android:name=".SignupActivity" android:label="Signup Page"></activity>
+        <activity android:name=".ActivityHomePage" android:label="Home Page"/>
+
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".QRActivity"
+            android:label="Verify Room Page"></activity>
+
+        <activity android:name=".TimeTableHome" android:label="Timetable Home"/>
+        <activity android:name=".DisplaySQLiteDataActivity" android:label="Timetable"/>
+        <activity android:name=".EditSingleRecordActivity" android:label="Timetable"/>
+        <activity android:name=".ShowSingleRecordActivity" android:label="Timetable"/>
+        <activity android:name=".AddTimetable" android:label="Add Timetable"/>
+
+
+        <activity android:name=".ReminderActivity" android:label="Reminder Home"/>
+        <activity android:name=".AddReminderActivity"/>
+
+        <activity android:name=".ViewNotification" android:label="College Alerts"/>
+        <activity android:name=".NavigationActivity" android:label="Navigation Page"/>
+
+
+        <!--  provider which is required to work on table uri-->
+        <provider
+            android:name=".ReminderDatabasePackage.ReminderQueryProvider"
+            android:authorities="com.example.dummy.campusnavforblind"
+            android:exported="false" />
+
+        <!--  service for reminder settings -->
+        <service
+            android:name=".ReminderServicePackage.ReminderService"
+            android:exported="false" />
+
+
+
+    </application>
+
+</manifest>

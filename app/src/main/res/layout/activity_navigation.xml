@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/wood" />
+
+    <EditText
+        android:id="@+id/startPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Enter start location"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/endPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="Enter end location"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/showPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp"
+        android:text="Show Path" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="54dp"
+        android:text="Back" />
+
+   <!--   <com.example.vkoth.woodworking.DrawLineImage
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:id="@+id/imageView1"
+
+           android:layout_alignParentTop="true"
+
+           />  -->
+
+</RelativeLayout>
